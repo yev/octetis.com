@@ -2524,7 +2524,10 @@ shortcodes page css
   display: inline-block;
   margin-left: 15px;
 }
-
+.keyword {
+  color: orange;
+  font-weight: bold;
+}
 
 
 
