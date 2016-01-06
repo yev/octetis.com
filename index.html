@@ -40,6 +40,32 @@
 </head><!--/head-->
 
 <body class="homepage">
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png"  class="animation animated-item-1" width="130" alt="octetis"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#octetis">Octetis</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#conatcat">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header>
     <section id="main-slider" class="no-margin">
         <div class="carousel slide">
             <ol class="carousel-indicators">
@@ -51,7 +77,6 @@
             <div class="carousel-inner">
 
                 <div class="item active" style="background-image: url(images/slider/bg4.jpg)">
-                    <p><img src="images/logo.png" class="animation animated-item-1" width="180" alt="logo"/>
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
@@ -68,7 +93,6 @@
                 </div><!--/.item-->
 
                 <div class="item" style="background-image: url(images/slider/bg5.jpg)">
-                    <p><img src="images/logo.png"  class="animation animated-item-1" width="180" ßalt="logo"/>
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
@@ -84,7 +108,6 @@
                 </div><!--/.item-->
 
                 <div class="item" style="background-image: url(images/slider/bg6.jpg)">
-                    <p><img src="images/logo.png" class="animation animated-item-1" width="180" alt="logo"/>
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
@@ -100,7 +123,6 @@
                     </div>
 
                 <div class="item" style="background-image: url(images/slider/bg7.jpg)">
-                    <p><img src="images/logo.png" class="animation animated-item-1" width="180" alt="logo"/>  
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
@@ -127,7 +149,7 @@
         </a>
     </section><!--/#main-slider-->
 
-    <section id="feature" >
+    <section id="octetis" >
         <div class="container">
            <div class="center wow fadeInDown">
                 <h2>Why Octetis</h2>
@@ -186,7 +208,7 @@
         </div><!--/.container-->
     </section><!--/#feature-->
 
-    <section id="recent-works">
+    <section id="portfolio">
         <div class="container">
             <div class="center wow fadeInDown">
                 <h2>Recent Works</h2>
@@ -396,8 +418,11 @@
                                                 <img class="img-responsive" src="images/qa.jpg">
                                             </div>
                                             <div class="media-body">
-                                                <p>Quality assurance - is the integrant part of our software development cycle. Unit/integration/acceptance tests makes the ADN of our development team. Our functional tests methodolgy is based mainly on <b>Selenium</b>.
-                                                    We are the main maintener of open source project - <a href="https://github.com/yev/seleniumMvnScreenshot">Selenium auto screenshots</a></p>
+                                                <p>Quality assurance - is the integrant part of our software development cycle. 
+                                                    Our QA engineers prepare the test campaigns for each iteration. Our testing methodology is based on writing test cases, documenting and automating all repetitive activities.
+                                                    <p>Unit/integration/acceptance tests makes the ADN of our development team. 
+                                                    <br/>Our functional tests methodolgy is based mainly on <b>Selenium</b>.
+                                                    <p>We are the main maintener of open source project - <a href="https://github.com/yev/seleniumMvnScreenshot">Selenium auto screenshots</a></p>
                                             </div>
                                         </div>
                                      </div>
@@ -408,9 +433,11 @@
                                                 <img class="img-responsive" src="images/logstash.png">
                                             </div>
                                             <div class="media-body">
-                                                <p>Our devops culture helps us to provide the best quality while solving operational problems of our clients.
-                                                   We are working with heavyweight entreprise systems like Puppet, and lightweight agentless Ansible.
-                                                   Our fully automated monitoring solutions use <b>Sensu, Collectd, Carbone, graphite + graphana</b> and <b>PagerDuty</b>.
+                                                <p>Our <b>DevOps</b> culture helps us to provide the best quality while solving operational problems of our clients.
+
+
+                                                <p>We are working with heavyweight entreprise systems like Puppet, and lightweight agentless Ansible.
+                                                   <p>Our fully automated monitoring solutions use <b>Sensu, Collectd, Carbone, graphite + graphana</b> and <b>PagerDuty</b>.
                                                </p>
                                             </div>
                                         </div>
@@ -422,6 +449,15 @@
                                                     <img  class="img-responsive" src="images/industrialisation.jpg">
                                                 </div>
                                             <div class="media-body">
+                                                We are active practitioners of continuous delivery approach that's why we autoamte everything while releasing a new version of software. Our built pipeline includes the following components:
+                                                <ul>
+                                                    <li> gerrit commit
+                                                    <li> Jenkins job (maven, gradle, ant, rake, bash, etc)
+                                                    <li> static code analysis on each commit with Sonar 
+                                                    <li> integrated automated X-Unit tests
+                                                    <li> API documentation generation
+                                                    <li> multi technology and multi-servers deploy with capistrano
+                                                </ul>
                                             <p>The brief introduction of our industrialization proccess is described in <a href="https://dl.dropboxusercontent.com/u/3839545/Octetis_Industrialization_Glance_Magazine.pdf" alt="Ocetis     industrialization">Octetis Industrialization principles</a></p>
                                             </div>
                                         </div>
@@ -438,7 +474,7 @@
 
     
 
-    <section id="conatcat-info">
+    <section id="conatcat">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
